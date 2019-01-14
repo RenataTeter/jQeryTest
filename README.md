@@ -1,2 +1,2 @@
 # jQeryTest
-jQuery ferst project
+jQuery first project
