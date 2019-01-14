@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    
+    
+   
+    <script>
+    $(document).ready(function(){
+        
+        $('.myLink').click( function(){
+            $('h1').fadeToggle(500);
+          
+        });
+        $('.myLink1').on('mouseenter', function(){
+            $('h1').slideUp(500);
+
+        }); 
+        $('.myLink1').on('mouseleave', function(){
+            $('h1').slideDown(500);
+
+        }); 
+        $('.myLink2').click( function(){
+            //$('h1').html('<h3>Hello Word</h3>');
+           // $('h1').replaceWith('<h3>Hello Word</h3>');
+            $('h1').append('<h3>Hello Word</h3>');
+        }); 
+       
+    });
+    
+    </script>
+</head>
+<body>
+   <h1>Welcome everyone</h1>
+    <a href="#" class="myLink">Click Me</a><br>
+    <a href="#" class="myLink2">Click MeTo</a><br>
+    <a href="#" class="myLink1">Click To</a>
+</body>
+</html>
